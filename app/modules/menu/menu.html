@@ -1,0 +1,11 @@
+<div class="menu-wrap">
+	<div 
+		class="nav-item" 
+		ng-repeat="item in vc.menu" 
+		ui-sref="{{item.url}}"
+		ng-class="{'nav-active': vc.$state.current.name == item.url}"
+		>
+		<div class="nav-icon-wrap" ng-directive="{{item.icon}}"></div>
+		<div class="nav-item__name" ng-bind="item.name"></div>
+	</div>
+</div>

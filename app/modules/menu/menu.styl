@@ -1,0 +1,40 @@
+@import '../../styles/config.styl'
+
+.menu-wrap
+	position absolute
+	top 0
+	left 0
+	right 0
+	height 60px
+	background $blue
+
+.nav-item
+	border-right 1px solid #405263
+	transition all 0.2s ease-in-out
+	cursor pointer
+	box-sizing border-box
+	padding 13px 16px
+	border-top 4px solid transparent
+	border-bottom 4px solid transparent 
+	display inline-block
+	height 60px
+	width 200px
+	font-size 16px
+	font-family RobotoLight
+	color #ffffff
+	user-select none
+	&.nav-active
+		border-bottom 4px solid $red
+	&__name
+		display inline-block
+		
+.nav-icon-wrap
+	display inline-block
+	vertical-align middle
+	
+.nav-icon
+	width 26px
+	height 26px
+	fill $yellow
+	display block
+	margin-right 10px
